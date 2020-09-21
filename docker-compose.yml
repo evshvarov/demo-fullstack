@@ -1,0 +1,11 @@
+version: '3.6'
+services:
+  iris:
+    build: 
+      context: .
+    ports: 
+      - 52775:52773
+    volumes:
+      - ./web:/opt/coffee/csp
+      - ./tests:/opt/coffee/tests
+      - ./:/irisdev/app

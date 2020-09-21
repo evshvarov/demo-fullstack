@@ -1,0 +1,14 @@
+{
+  "objectscript.conn": {
+    "username": "_SYSTEM",
+    "password": "SYS",
+    "ns": "COFFEE",
+    "docker-compose": {
+      "service": "iris",
+      "internalPort": 52773
+    },
+    "links": {
+      "CoffeeMaker": "http://localhost:${port}/csp/coffee/index.html"
+    }
+  }
+}
